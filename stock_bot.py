@@ -89,8 +89,8 @@ and separately increment each run play separately in for loop (maybe 5 buys & wa
 
 def main():
     global TOTAL_CASH
-    key = 'PKNM5EGLRQENDVJMIY6K'       #hide these when uploading to github
-    secret = 'Z9JRNIloBukw6R0U69QqJfFYWCVMG9RD4q5Q31FK'
+    key = ''       #hide these when uploading to github
+    secret = ''
     alpaca_endpoint = 'https://paper-api.alpaca.markets'
     alpaca = tradeapi.REST(key, secret, alpaca_endpoint, api_version='v2')
 
@@ -112,7 +112,7 @@ def main():
 
 
 
-#alpaca = tradeapi.REST('PKNM5EGLRQENDVJMIY6K','Z9JRNIloBukw6R0U69QqJfFYWCVMG9RD4q5Q31FK','https://paper-api.alpaca.markets')
+#alpaca = tradeapi.REST('','','https://paper-api.alpaca.markets')
 #alpaca.submit_order("MSFT",1,'buy','market','day')
 
 #account = alpaca.get_account()
